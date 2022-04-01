@@ -15,8 +15,10 @@
     "packages/*"
   ],
   "scripts": {
+    "ver": "lerna version --conventional-commits",
+    "publish": "lerna publish",
     "commit": "git cz",
-    "release":"standard-version"
+    "release": "standard-version"
   },
   "config": {
     "commitizen": {
@@ -27,5 +29,6 @@
     "hooks": {
       "commit-msg": "commitlint -e -V"
     }
-  }
+  },
+  "version": "0.0.0"
 }
